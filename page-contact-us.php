@@ -70,15 +70,6 @@
 
 		</div><!-- .container -->
 
-		<div id="map-container" class="map contact-map">
-
-			<div id="map-canvas">
-				
-
-			</div><!-- #map-canvas -->
-
-		</div><!-- #map-container -->
-
 	</section><!-- #contact-us-page -->
 
 <?php endif; ?>
