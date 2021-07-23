@@ -7,28 +7,15 @@
 		<div class="container">
 			
 			<div class="row">
-				
-
-  
-  				  <h1 class="text-center dash"><?php the_title(); ?></h1>
-
-		
-				
-			</div><!-- .row -->
-
-
+  			<h1 class="text-center dash"><?php the_title(); ?></h1>
+			</div>
+			
 			<div class="row">
-				
 				<div class="col-sm-10 col-sm-offset-1 text-center hero">
-					
 					<?php if ( get_field( 'hero_text' ) ) : ?>
-
 						<?php the_field( 'hero_text' ); ?>
-
 					<?php endif; ?>
-
 				</div><!-- .col-sm-12 -->
-
 			</div><!-- .row -->
 
 			<div class="row member-body">
@@ -56,47 +43,18 @@
 					<?php if ( get_field( 'group' ) == "team-member" ) : ?>
 					
 					<div class="row">
-						
 						<div class="col-sm-12">
-							
 							<table class="table">
-							  
 								<tr>
-										
 									<td>Email: </td>
-
 									<td><a href="mailto:<?php the_field( 'email' ); ?>"><?php the_field( 'email' ); ?></a></td>
-
 								</tr>
-
 								<tr>
-										
 									<td>Office: </td>
-
 									<td><?php the_field( 'office_tel' ); ?></td>
-
 								</tr>
-
-								<tr>
-										
-									<td>Mobile: </td>
-
-									<td><?php the_field( 'mobile' ); ?></td>
-
-								</tr>
-
-								<tr>
-										
-									<td>Skype: </td>
-
-									<td><?php the_field( 'skype' ); ?></td>
-
-								</tr>
-
 							</table>
-
 						</div><!-- .col-sm-12 -->
-
 					</div><!-- .row -->
 
 					<div class="row">
