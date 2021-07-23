@@ -40,20 +40,6 @@
 
 				</div><!-- .bordered-div -->
 
-				<div id="get-direction">
-					
-					<div class="row">
-						
-						<div class="col-sm-12 text-center">
-							
-							<a class="btn btn-lg btn-primary purple-btn" href="/contact-us">Get directions</a>
-
-						</div><!-- .col-sm-12 -->
-
-					</div><!-- .row -->
-
-				</div><!-- #get-direction -->
-
 			</div><!-- .col-sm-12 -->
 
 		</div><!-- .row -->
@@ -69,18 +55,10 @@
 		<div class="row">
 			
 			<div class="col-sm-6">
-				
-				<a class="btn btn-primary btn-lg purple-btn" href="<?php echo get_site_url( ); ?>/newsletter_signup">Subscribe to newsletter</a>
 
 				<ul class="social-links list-inline list-unstyled">
 					
 					<li class="twitter">
-
-						<a href="#"></a>
-
-					</li><!-- .twitter -->
-
-					<li class="googleplus">
 
 						<a href="#"></a>
 
@@ -106,7 +84,7 @@
 
 				</ul><!-- .social-links -->
 
-				<p style="color: #FFF;">© Minervation Ltd 2014</p>
+				<p style="color: #FFF;">© Minervation Ltd <?php echo date(Y); ?></p>
 
 				<ul class="footer-menu list-unstyled">
 					

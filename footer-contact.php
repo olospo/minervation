@@ -6,8 +6,6 @@
 			
 			<div class="col-sm-6">
 				
-				<a class="btn btn-primary btn-lg purple-btn" href="<?php echo get_site_url( ); ?>/newsletter_signup">Subscribe to newsletter</a>
-
 				<ul class="social-links list-inline list-unstyled">
 					
 					<li class="twitter">
@@ -42,7 +40,7 @@
 
 				</ul><!-- .social-links -->
 
-				<p style="color: #FFF;">© Minervation Ltd 2014</p>
+				<p style="color: #FFF;">© Minervation Ltd <?php echo date(Y); ?></p>
 
 				<ul class="footer-menu list-unstyled">
 					
