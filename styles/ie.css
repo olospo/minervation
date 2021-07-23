@@ -1,0 +1,32 @@
+#contact-us .row.contact-text.tel .col-sm-12, #contact-us-page .row.contact-text.tel .col-sm-12 {
+	background: url(../images/tel-icon-ie.png) no-repeat left center;
+}
+
+#contact-us .row.contact-text.email .col-sm-12, #contact-us-page .row.contact-text.email .col-sm-12 {
+	background: url(../images/email-icon-ie.png) no-repeat left center;
+}
+
+#contact-us .row.contact-text.map .col-sm-12, #contact-us-page .row.contact-text.map .col-sm-12 {
+	background: url(../images/map-icon-ie.png) no-repeat left center;
+}
+#slider .bx-viewport {
+	height: 580px !important;
+}
+#work-slider .bx-viewport {
+	height: 410px !important;
+}
+.service-box {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#2cccc7',GradientType=0 ); /* IE6-8 */
+}
+/* IE8 uses \0 */
+@media all\0 { 
+
+		#services-tem .service-box .icon-wrapper {
+ 		background-color: #fff;
+	 }
+
+ #services-tem .service-box .text-wrapper {
+  background-color: #2cccc7;
+ 	}
+ 	
+}
