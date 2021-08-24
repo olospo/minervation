@@ -1,66 +1,34 @@
-<section id="contact-us">
-		
+<section id="contact-us">	
 	<div class="container">
-		
+
 		<div class="row">
-			
-			<div class="col-sm-12">
-				
+			<div class="col-sm-12">				
 				<h1 class="text-center black-gray dash">Contact us</h1>
-
-			</div><!-- .col-sm-12 -->
-
-		</div><!-- .row -->
+			</div>
+		</div>
 
 		<div class="row">
-
 			<div class="col-sm-6">
-
-				<div id="contact-form">
-					
-					<div class="row">
-						
+				<div id="contact-form">				
+					<div class="row">					
 						<?php $footer = get_post( 22 );?>
-
 						<?php echo do_shortcode( $footer->post_content ); ?>
-
-					</div><!-- .row -->
-
-				</div><!-- .contact-form -->
-
-			</div><!-- .col-sm-6 -->
+					</div>
+				</div>
+			</div>
 			
 			<div class="col-sm-6">
-
 				<div class="row contact-text email" style="margin-top: 30px;">
-
 					<div class="col-sm-12">
-
 						<a href="mailto:<?php the_field( 'email', 22 ); ?>"><?php the_field( 'email', 22 ); ?></a>
-
 					</div><!-- .col-sm-12 -->
-
 				</div><!-- .row -->
 
 				<div class="row contact-text tel">
-					
 					<div class="col-sm-12">
-
 						<a href=""><?php the_field( 'tel', 22 ); ?></a>
-
-					</div><!-- .col-sm-12 -->
-
-				</div><!-- .row -->
-
-				<div class="row contact-text map">
-					
-					<div class="col-sm-12">
-
-						<a href="">View Map</a>
-
-					</div><!-- .col-sm-12 -->
-
-				</div><!-- .row -->
+					</div>
+				</div>
 
 				<div class="row contact-text address">
 					
