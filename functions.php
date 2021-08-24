@@ -3,8 +3,8 @@
 add_theme_support( 'post-thumbnails' );
 //Registering menu
 register_nav_menus( array('primary' => 'Primary Menu',
-						  'about' => 'About Menu',
-						  'services' => 'Services Menu') );
+	'about' => 'About Menu',
+	'services' => 'Services Menu') );
 
 //Registering CSSs in functions.php (notice that you have to use wp_head(), wp_footer())
 function theme_styles() {
@@ -21,8 +21,6 @@ function theme_styles() {
 }
 add_action('wp_enqueue_scripts', 'theme_styles');
 
-
-
 //Registering scripts in functions.php (notice that you have to use wp_head(), wp_footer())
 function theme_js() {
 	wp_enqueue_script('bootstrap', get_template_directory_uri() . '/scripts/bootstrap.min.js', array('jquery'), '', true);
@@ -32,19 +30,8 @@ function theme_js() {
 	//jquery.raty
 	wp_register_script('rating', get_template_directory_uri() . '/scripts/jquery.raty.min.js', array('jquery', 'bootstrap'), '', true);
 
-	// register Google Map js
-	wp_register_script('googleMap', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAghciJe7WXGiVacExDu30o7hqRP7dFFb0&v=3.exp&sensor=false', array('jquery', 'bootstrap'), '', true);
-
 	if(is_front_page()) {
 		wp_enqueue_script('bxslider');
-	}
-
-	if(is_page( 'contact-us' )) {
-		wp_enqueue_script('googleMap');
-	}
-
-	if(is_page( 'write_review' )) {
-		wp_enqueue_script('rating');
 	}
 
 	wp_enqueue_script('custom', get_template_directory_uri() . '/scripts/custom.js', array('jquery', 'bootstrap'), '', true);

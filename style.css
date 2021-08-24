@@ -4,7 +4,7 @@ Theme URI: http://www.minervation.com/
 Author: Design By Day
 Author URI: http://designbyday.co.uk/
 Description: A bespoke theme designed and developed by Design By Day.
-Version: 1.0
+Version: 1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -147,11 +147,23 @@ h3 {
 .purple {
 	color: #653694 !important;
 }
-.pagination .page-numbers {
+.pagination a.page-numbers {
 	display: inline-block;
 	padding: 10px;
 	background-color: #2DCDC8;
 	color: #2C2C2C;
+	font-size: 22px;
+}
+
+.pagination a.page-numbers:hover {
+	background-color: #653695;
+	color: #fff;
+}
+.pagination span.page-numbers {
+	display: inline-block;
+	padding: 10px;
+	background-color: #653695;
+	color: #fff;
 	font-size: 22px;
 }
 /* Header styles
@@ -818,7 +830,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled='false', startColorst
 	background-color: #EBEBEB;
 }
 
-#single-work-body p, #single-work-body li, #single-work-body blockquote, #single-work-body ul li, #single-work-body ol li {
+#single-work-body p, #single-work-body li, #single-work-body blockquote, #single-work-body ul li, #single-work-body ol li, #service-page-wrapper li {
 	font-size: 18px;
 }
 
@@ -1090,7 +1102,7 @@ blockquote p {
 
 footer {
 	background-color: #2B2B2B;
-	padding: 35px 0 30px;
+	padding: 30px;
 	color: #FFF;
 }
 
@@ -1101,8 +1113,16 @@ footer .purple-btn, footer .purple-btn:hover, footer .purple-btn:visited {
 }
 
 footer .social-links  {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin: 10px 0;
+	text-align: right;
+	
+}
+
+@media (max-width: 768px) {
+	footer .social-links {
+		text-align: left;
+		margin: 20px 0;
+	}
 }
 
 footer .social-links li {
@@ -1147,14 +1167,24 @@ footer .social-links li.youtube a {
 	background: url(images/youtube-icon.png) no-repeat center center;
 }
 
+.footer-menu {
+	margin: 0;
+}
+
+.footer-menu li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
 .footer-menu a, .footer-menu a:hover, .footer-menu a:visited {
 	display: inline-block;
 	color: #FFF;
-	margin-bottom: 15px;
+	text-decoration: underline;
 }
 
 footer p {
 	margin-bottom: 15px;
+	color: #fff;
 }
 
 footer #search {
@@ -1469,7 +1499,7 @@ footer #search-icon {
 	}
 
 	footer {
-	  padding: 75px 0;
+	  padding: 40px 0;
 	}
 
 	#contact-us a, #contact-us .row.contact-text .col-sm-12 a, #contact-us-page .row.contact-text .col-sm-12 a {
@@ -1497,6 +1527,7 @@ footer #search-icon {
   header {
     padding: 30px 0 60px;
   }
+
 
 
 	/* Menu
@@ -1594,7 +1625,7 @@ footer #search-icon {
     
     
     
-    
+  
     
 		
 	.bxslider li {
