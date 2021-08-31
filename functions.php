@@ -1,6 +1,9 @@
 <?php
 
 add_theme_support( 'post-thumbnails' );
+add_image_size( 'thumb', 150, 150, true ); // Normal thumbnail size
+add_image_size( 'large-thumb', 300, 300, true ); // Large thumbnail size 
+add_image_size( 'featured-img', 740, 420, true ); // Featured Image size 
 //Registering menu
 register_nav_menus( array('primary' => 'Primary Menu',
 	'about' => 'About Menu',
