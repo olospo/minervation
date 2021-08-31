@@ -4,12 +4,13 @@ add_theme_support( 'post-thumbnails' );
 add_image_size( 'thumb', 150, 150, true ); // Normal thumbnail size
 add_image_size( 'large-thumb', 300, 300, true ); // Large thumbnail size 
 add_image_size( 'featured-img', 740, 420, true ); // Featured Image size 
-//Registering menu
+
+// Registering menu
 register_nav_menus( array('primary' => 'Primary Menu',
 	'about' => 'About Menu',
 	'services' => 'Services Menu') );
 
-//Registering CSSs in functions.php (notice that you have to use wp_head(), wp_footer())
+// Registering CSS
 function theme_styles() {
 	wp_enqueue_style('fonts', get_template_directory_uri() . '/styles/MyFontsWebfontsKit.css');
 	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/styles/bootstrap.min.css');
@@ -24,7 +25,7 @@ function theme_styles() {
 }
 add_action('wp_enqueue_scripts', 'theme_styles');
 
-//Registering scripts in functions.php (notice that you have to use wp_head(), wp_footer())
+// Registering scripts
 function theme_js() {
 	wp_enqueue_script('bootstrap', get_template_directory_uri() . '/scripts/bootstrap.min.js', array('jquery'), '', true);
 	wp_register_script('bxslider', get_template_directory_uri() . '/scripts/jquery.bxslider.min.js', array('jquery'), '', true);

@@ -20,21 +20,22 @@
 
 						<?php $post_thumbnail_id = get_post_thumbnail_id(get_the_ID()); ?>
 						<?php $alt = get_post_meta($post_thumbnail_id, '_wp_attachment_image_alt', true); ?>
-						<?php $image_attributes = wp_get_attachment_image_src( $post_thumbnail_id, "full" );?>
+						<?php $image_attributes = wp_get_attachment_image_src( $post_thumbnail_id, "featured-img" );?>
 
 						<?php if ( $image_attributes[0] != "" || isset($image_attributes[0]) ) : ?>
-						
+						<div class="image">
 							<img class="img-responsive" src="<?php echo $image_attributes[0]; ?>" alt="<?php echo $alt; ?>">
-
+						</div>
 						<?php else : ?>
-
+						<div class="image">
 							<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/place_holder.jpg" alt="<?php echo the_title( ); ?>">
+						</div>
 
 						<?php endif; ?>
 
 						<h3><?php the_title( ); ?></h3>
 
-						<p><?php the_excerpt(); ?></p>
+						<?php the_excerpt(); ?>
 
 					</a><!-- .work-box -->
 

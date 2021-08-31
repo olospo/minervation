@@ -221,7 +221,7 @@ header {
 }
 
 .navbar-brand {
-  width: 220px;
+  width: 280px;
   height: 66px;
 }
 
@@ -473,7 +473,7 @@ bottom: -55px;
 }
 
 .work-bxslider p {
-	font-size: 24px;
+	font-size: 20px;
 }
 
 #work-slider .col-sm-12 {
@@ -482,7 +482,7 @@ bottom: -55px;
 }
 
 #work-slider a.purple-btn {
-	margin-top: 30px;
+	margin-top: 0px;
 }
 
 #trusted-by-clients {
@@ -508,11 +508,8 @@ bottom: -55px;
 	width: 100%;
 }
 
-#featured-works h2 {
- color: #653694;
- font-size: 24px;
- padding: 0 15px 0 15px;
- margin-bottom: 0px;
+#featured-works h1 {
+ margin-bottom: 30px;
 }
 
 #featured-works a.box {
@@ -525,7 +522,7 @@ bottom: -55px;
 }
 
 #featured-works a.purple-btn, #national-elf a.purple-btn {
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 #national-elf p {
@@ -541,6 +538,10 @@ bottom: -55px;
 	margin-bottom: 50px;
 }
 
+#trusted-by-clients h1 {
+	margin: 30px 0 50px 0;
+}
+
 #partners-and-clients .col-sm-3 img, #trusted-by-clients .col-sm-3 img {
 	display: block;
 	margin: 0 auto;
@@ -553,6 +554,7 @@ section#testimonials.front-page {
 
 section#testimonials.front-page h1 {
 	color: #2CCCC7;
+	margin: 50px 0 0 0;
 }
 
 section#testimonials.front-page h3 {
@@ -569,6 +571,17 @@ section#testimonials.front-page h3 {
 
 .front-page .testimony p.position, .front-page .testimony p.name {
 	color: #2CCCC7;
+}
+
+.front-page .testimony h3.name  {
+	font-size: 24px;
+	margin-bottom: 0;
+}
+
+.front-page .testimony p.position {
+	color: #fff;
+	font-size: 18px;
+	
 }
 
 .testimony img {
@@ -808,22 +821,36 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled='false', startColorst
 .work-box {
 	display: block;
 	background-color: #FFF;
-	border: 5px solid #FFF;
+	// border: 5px solid #FFF;
 	height: auto;
 	margin-top: 30px;
 	padding-bottom: 10px;
 }
 
 .work-box h3 {
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
 	color: #653694;
 	font-size: 24px;
 }
 
 .work-box p {
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.work-box .image {
+	overflow: hidden;
+}
+
+.work-box img {
+	transition: transform .5s;
+	transform: scale(1);
+}
+
+.work-box:hover img {
+	transition: transform .5s;
+	transform: scale(1.10);
 }
 
 #single-work-body {
@@ -1292,6 +1319,14 @@ footer #search-icon {
     background-color: #EBEBEB;
     border-radius: 4px;
   } 
+	.logo {
+		transition: transform .5s;
+		transform: scale(1);
+	}
+	.logo:hover {
+		transition: transform .5s;
+		transform: scale(1.1);
+	}
 
 	/* Secondary Nav
 	=================================
@@ -1384,7 +1419,7 @@ footer #search-icon {
 		
 	.bxslider li .caption h1 {
 		margin-top: 100px;
-		margin-bottom: 50px;
+		margin-bottom: 20px;
 		font-size: 55px;
 	}
 
@@ -1525,7 +1560,7 @@ footer #search-icon {
 @media (min-width: 992px) {
 
   header {
-    padding: 30px 0 60px;
+    padding: 30px 0 30px;
   }
 
 
@@ -1540,7 +1575,7 @@ footer #search-icon {
 
   a.navbar-brand {
     float: left;
-    margin-top: 17px;
+    margin-top: 25px;
     }
     
   a.navbar-brand img {
