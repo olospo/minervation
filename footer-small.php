@@ -13,7 +13,7 @@
 					<div class="row">
 						<div class="col-sm-6 text-center">
 							<img src="<?php echo get_template_directory_uri(); ?>/images/tel-icon.png" alt="tel">
-							<a href=""><?php the_field( 'tel', 22 ); ?></a>
+							<a href="tel:<?php the_field( 'tel', 22 ); ?>"><?php the_field( 'tel', 22 ); ?></a>
 						</div>
 						<div class="col-sm-6 text-center">
 							<img src="<?php echo get_template_directory_uri(); ?>/images/email-icon.png" alt="mail">

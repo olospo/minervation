@@ -26,7 +26,7 @@
 
 				<div class="row contact-text tel">
 					<div class="col-sm-12">
-						<a href=""><?php the_field( 'tel', 22 ); ?></a>
+						<a href="tel:<?php the_field( 'tel', 22 ); ?>"><?php the_field( 'tel', 22 ); ?></a>
 					</div>
 				</div>
 

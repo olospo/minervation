@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
 
 			'controls': false,
 			'auto' : true,
-			'pause': 3000
+			'pause': 5000
 
 		});
 

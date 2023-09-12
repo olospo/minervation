@@ -15,6 +15,19 @@ This theme, like WordPress, is licensed under the GPL.
 =================================
 */
 
+// General
+::selection {
+	color: #fff;
+	background: #653694 !important;
+	text-shadow: none !important;
+}
+		
+::-moz-selection {
+	color: #fff;
+	background: #653694 !important;
+	text-shadow: none !important;
+}
+
 body {
 	font-family: "jaf-bernina-sans";
 }
@@ -46,6 +59,16 @@ a, a:focus, a:hover, a:visited, a:active {
      -webkit-hyphens: auto;
       -moz-hyphens: auto;
         hyphens: auto;
+}
+section#single-work-body a:hover, section#services-tem a:hover, section#team-member-index a:hover, section#service-page-wrapper a:hover, section#our-history a:hover {
+	text-decoration: underline;
+}
+
+.wp-block-image figcaption {
+	background: #fff;
+	padding: 10px;
+	margin: 0 0 1em 0;
+	font-size: 16px;
 }
         
 h1, h2, h3, h4 , h5 {
@@ -139,6 +162,13 @@ h3 {
 #the-team .img-responsive, #associates .img-responsive, .member-box img {
   margin: 0 auto;
 	width: 70%;
+}
+
+#the-team .member-box img {
+	border: 5px solid transparent;
+}
+#the-team .member-box img:hover {
+	border: 5px solid #653695;
 }
 
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
@@ -428,12 +458,25 @@ input[type="search"].sb-search-input {
 	color: #2C2C2C !important;
 }
   
-.bxslider li .caption h1 {
-	color: #FFF;
-	margin-top: 32px;
-	margin-bottom: 20px;
-	font-size: 30px;
+	
+.slide-content {
+	padding: 20px;
 }
+.slide-content a {
+	margin: 8px 0 0 0;
+}
+	
+.bxslider li .caption h1 {
+	font-size: 30px;
+	line-height: 56px;
+	background-color: #fff;
+	color: #653694;
+	display: inline;
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+	padding: .3em .2em .2em .2em;
+}
+
 
 .bxslider .caption h1 {
 	color: #FFF;
@@ -517,7 +560,7 @@ bottom: -55px;
 }
 
 #featured-works p {
-	padding: 15px;
+	padding: 0 20px 20px 20px;
 	font-size: 18px;
 }
 
@@ -725,7 +768,7 @@ section#testimonials.front-page h3 {
 }
 
 #services-tem h2 {
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 #services-tem .teaser-text {
 	margin-bottom: 30px;
@@ -757,7 +800,22 @@ background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 49%,#ffffff 50%,#2c
 background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 49%,#ffffff 50%,#2cccc7 51%,#2cccc7 71%,#2cccc7 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 49%,#ffffff 50%,#2cccc7 51%,#2cccc7 71%,#2cccc7 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 49%,#ffffff 50%,#2cccc7 51%,#2cccc7 71%,#2cccc7 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient(enabled='false', startColorstr='#ffffff', endColorstr='#2cccc7',GradientType=0 ); /* IE6-8 */
+}
+
+.service-box:hover {
+	background: #ffffff; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 49%, #ffffff 50%, #653695 51%, #653695 71%, #653695 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(49%,#ffffff), color-stop(50%,#ffffff), color-stop(51%,#2cccc7), color-stop(71%,#653695), color-stop(100%,#653695)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 49%,#ffffff 50%,#653695 51%,#653695 71%,#653695 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 49%,#ffffff 50%,#653695 51%,#653695 71%,#653695 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 49%,#ffffff 50%,#653695 51%,#653695 71%,#653695 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 49%,#ffffff 50%,#653695 51%,#653695 71%,#653695 100%); /* W3C */
+}
+
+.service-box:hover .text-wrapper {
+	color: #fff;	
 }
 
 .service-box .icon-wrapper {
@@ -821,10 +879,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled='false', startColorst
 .work-box {
 	display: block;
 	background-color: #FFF;
-	// border: 5px solid #FFF;
 	height: auto;
 	margin-top: 30px;
 	padding-bottom: 10px;
+}
+
+.work-box:hover h3 {
+	text-decoration: underline;
 }
 
 .work-box h3 {
@@ -896,6 +957,10 @@ blockquote p {
 	padding: 15px;
 	color: #2B2B2B;
 }
+#single-work-body .row.link a:hover {
+	background: #653695;
+	color: #fff;
+}
 
 #single-work-body ul li, #single-work-body ol li {
 	color: #4b4b4b;
@@ -929,8 +994,21 @@ blockquote p {
 =================================
 */
 
-#contact-us-page .email a, #contact-us-page .email a:hover, #contact-us-page .email a:visited, #contact-us-page .tel a, #contact-us-page .tel a:hover, #contact-us-page .tel a:visited {
+#contact-us-page .email a, #contact-us-page .email a:visited, #contact-us-page .tel a, #contact-us-page .tel a:visited {
 	color: #4B4B4B;
+}
+#contact-us-page .email a:hover, #contact-us-page .tel a:hover {
+	color: #653694;
+	text-decoration: underline;
+} 
+#contact-us a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#contact-us-page a:hover {
+	color: #653694;
+	text-decoration: underline;
 }
 
 #contact-us-page .email h3, #contact-us-page .tel h3 {
@@ -1017,13 +1095,22 @@ blockquote p {
 	padding: 40px 0;
 }
 
-#contact-us a, #contact-us a:hover, #contact-us a:visited, #contact-us-page a:visited, #contact-us-page a, #contact-us-page a:hover {
+#contact-us a, #contact-us a:visited, #contact-us-page a:visited, #contact-us-page a  {
 	display: inline-block;
 	font-size: 20px;
 	color: #2B2B2B;
 	text-decoration: none;
 	margin: 10px 0 0 0;
 	padding-left: 10px;
+}
+#contact-us a:hover {
+	color: #653694;
+	text-decoration: underline;
+}
+
+#contact-us-page a:hover {
+	color: #653694;
+	text-decoration: underline;
 }
 
 #contact-us a.purple-btn, #contact-us a.purple-btn:hover {
@@ -1073,16 +1160,11 @@ blockquote p {
 }
 
 #contact-us .row.contact-text.address .col-sm-12 p, #contact-us-page .row.contact-text.address .col-sm-12 p {
-	font-size: 25px;
+	font-size: 20px;
 	padding-left: 20px;
 	color: #2B2B2B;
-	line-height: 30px;
-	margin-top: 20px;
-}
-
-#contact-us-page .row.contact-text.address .col-sm-12 p {
-	line-height: 30px !important;
-	color: #4b4b4b;
+	line-height: 28px;
+	margin-top: 10px;
 }
 
 #contact-form {
@@ -1203,10 +1285,14 @@ footer .social-links li.youtube a {
 	margin-right: 10px;
 }
 
-.footer-menu a, .footer-menu a:hover, .footer-menu a:visited {
+.footer-menu a, .footer-menu a:visited {
 	display: inline-block;
 	color: #FFF;
 	text-decoration: underline;
+}
+
+.footer-menu a:hover {
+	text-decoration: none;
 }
 
 footer p {
@@ -1260,7 +1346,7 @@ footer #search-icon {
 	}
 
 	h2 {
-	  font-size: 38px;
+	  font-size: 32px;
 	}
 
 	h2.hero, h2.hero p, .hero p, h2 p, .hero h2, #single-work-body h2 p {;
@@ -1411,16 +1497,19 @@ footer #search-icon {
 	.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
 	  bottom: -30px;
 	}
+	
+	.slide-content {
+		padding: 40px 0 0 0;
+	}
 
 	.bxslider li {
 		height: 413px;
 		background-size: 991px 413px;
 	}
-		
+	
 	.bxslider li .caption h1 {
-		margin-top: 100px;
-		margin-bottom: 20px;
-		font-size: 55px;
+		font-size: 40px;
+		line-height: 66px;
 	}
 
 	.work-bxslider h2 {
@@ -1657,12 +1746,6 @@ footer #search-icon {
     width: 45px;
   }  
     
-    
-    
-    
-  
-    
-		
 	.bxslider li {
 		height: 500px;
 		background-size: 1200px 500px;
@@ -1750,7 +1833,7 @@ footer #search-icon {
     .sb-search {
     max-width: 570px;
     }
-    
+
 
 
 	/* Secondary Menu
@@ -1775,13 +1858,17 @@ footer #search-icon {
   padding: 16px 20px 12px
   }
 
-
-
-	
 	.bxslider li {
 		height: 580px;
 		background-size: cover;
 	}	
+	.bxslider li .caption h1 {
+		font-size: 48px;
+		line-height: 84px;
+	}
+	.slide-content {
+		padding: 100px 0 0 0;
+	}
 
 	#filtering-box p, #summarising-box p, #research-box p {
 		font-size: 28px;

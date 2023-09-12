@@ -282,7 +282,7 @@
 						
 						<div class="col-sm-12 text-center">
 							
-							<a class="btn btn-lg btn-primary purple-btn" href="<?php echo get_site_url( ); ?>/team-member">See all the team</a>
+							<!-- <a class="btn btn-lg btn-primary purple-btn" href="<?php echo get_site_url( ); ?>/team-member">See all the team</a> -->
 
 						</div><!-- .col-sm-12 -->
 

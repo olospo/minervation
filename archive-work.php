@@ -3,7 +3,7 @@
 	<section id="work-archive-page">	
 		<div class="container">
 			<div class="row">
-				<h1 class="text-center dash">Work</h1>
+				<h1 class="text-center dash">Projects</h1>
 			</div>
 
 			<div class="row">
