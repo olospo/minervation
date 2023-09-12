@@ -60,8 +60,6 @@
 					<div class="row">
 						
 						<div class="col-sm-12">
-
-							<p style="margin-bottom: 40px; margin-top: 30px;">Connect with <?php the_title( ); ?></p>
 							
 							<ul class="list-unstyled list-inline social-icons">
 								
