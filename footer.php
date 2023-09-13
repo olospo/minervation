@@ -76,7 +76,7 @@
 
 				</ul><!-- .social-links -->
 
-				<p style="color: #FFF;">© Minervation Ltd <?php echo date(Y); ?></p>
+				<p style="color: #FFF;">&copy; Minervation Ltd <?php echo date(Y); ?></p>
 
 				<ul class="footer-menu list-unstyled">
 					
@@ -103,12 +103,9 @@
 	</div><!-- .container -->
 
 </footer>
-
 <?php wp_footer(); ?>
 	<script>
-		new UISearch( document.getElementById( 'sb-search' ) );
-	</script>
-
+	new UISearch( document.getElementById( 'sb-search' ) );
+</script>
 </body>
-
 </html>
