@@ -141,7 +141,7 @@ Template Name: Child of Services
 					
 					<div class="col-sm-12 text-center">
 						
-						<h1 class="dash">Related Work</h1>
+						<h1 class="dash">Related Projects</h1>
 
 					</div><!-- .col-sm-12 -->
 					
