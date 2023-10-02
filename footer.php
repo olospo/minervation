@@ -76,7 +76,7 @@
 
 				</ul><!-- .social-links -->
 
-				<p style="color: #FFF;">&copy; Minervation Ltd <?php echo date(Y); ?></p>
+				<p style="color: #FFF;">&copy; Minervation Ltd <?php echo date("Y"); ?></p>
 
 				<ul class="footer-menu list-unstyled">
 					

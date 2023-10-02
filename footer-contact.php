@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<p>&copy; Minervation Ltd <?php echo date(Y); ?></p>
+				<p>&copy; Minervation Ltd <?php echo date("Y"); ?></p>
 				<ul class="footer-menu list-unstyled">
 					<li><a href="#">Site map</a></li>
 					<li><a href="#">Privacy policy</a></li>
