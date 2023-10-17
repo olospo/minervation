@@ -41,9 +41,9 @@ function theme_js() {
 add_action('wp_enqueue_scripts', 'theme_js');
 
 // add text to the featured image metabox
-if ( get_post_type($_REQUEST['post']) == 'work' && is_admin() ){
+if ( get_post_type($_REQUEST['post'] ?? null) == 'work' && is_admin() ){
 	add_filter( 'admin_post_thumbnail_html', 'change_post_image_metabox_work' );
-} elseif (get_post_type($_REQUEST['post']) == 'team' && is_admin()) {
+} elseif (get_post_type($_REQUEST['post'] ?? null) == 'team' && is_admin()) {
 	add_filter( 'admin_post_thumbnail_html', 'change_post_image_metabox_team' );
 }
 
