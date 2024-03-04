@@ -20,13 +20,13 @@
 			<div class="col-sm-6">
 				<div class="row contact-text email" style="margin-top: 30px;">
 					<div class="col-sm-12">
-						<a href="mailto:<?php the_field( 'email', 22 ); ?>"><?php the_field( 'email', 22 ); ?></a>
+						<a href="mailto:<?php echo get_field( 'email', 22 ); ?>"><?php echo get_field( 'email', 22 ); ?></a>
 					</div><!-- .col-sm-12 -->
 				</div><!-- .row -->
 
 				<div class="row contact-text tel">
 					<div class="col-sm-12">
-						<a href="tel:<?php the_field( 'tel', 22 ); ?>"><?php the_field( 'tel', 22 ); ?></a>
+						<a href="tel:<?php echo get_field( 'tel', 22 ); ?>"><?php echo get_field( 'tel', 22 ); ?></a>
 					</div>
 				</div>
 
@@ -34,7 +34,7 @@
 					
 					<div class="col-sm-12">
 
-						<?php the_field( 'address', 22 ); ?>
+						<?php echo get_field( 'address', 22 ); ?>
 
 					</div><!-- .col-sm-12 -->
 

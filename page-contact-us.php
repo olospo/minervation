@@ -38,7 +38,7 @@
 
 						<div class="col-sm-12">
 
-							<a href="mailto:<?php the_field( 'email', 22 ); ?>"><?php the_field( 'email', 22 ); ?></a>
+							<a href="mailto:<?php echo get_field( 'email', 22 ); ?>"><?php echo get_field( 'email', 22 ); ?></a>
 
 						</div><!-- .col-sm-12 -->
 
@@ -48,7 +48,7 @@
 						
 						<div class="col-sm-12">
 
-							<a href=""><?php the_field( 'tel', 22 ); ?></a>
+							<a href=""><?php echo get_field( 'tel', 22 ); ?></a>
 
 						</div><!-- .col-sm-12 -->
 
@@ -58,7 +58,7 @@
 						
 						<div class="col-sm-12">
 
-							<?php the_field( 'address', 22 ); ?>
+							<?php echo get_field( 'address', 22 ); ?>
 
 						</div><!-- .col-sm-12 -->
 

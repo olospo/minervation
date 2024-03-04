@@ -15,19 +15,19 @@
 				<ul class="social-links list-inline list-unstyled">
 					
 					<li class="twitter">
-						<a href="<?php the_field('twitter_link', 22); ?>"></a>
+						<a href="<?php echo get_field('twitter_link', 22); ?>"></a>
 					</li>
 
 					<li class="facebook">
-						<a href="<?php the_field('facebook_link', 22); ?>"></a>
+						<a href="<?php echo get_field('facebook_link', 22); ?>"></a>
 					</li>
 
 					<li class="linkedin">
-						<a href="<?php the_field('linkedin_link', 22); ?>"></a>
+						<a href="<?php echo get_field('linkedin_link', 22); ?>"></a>
 					</li>
 
 					<li class="youtube">
-						<a href="<?php the_field('youtube_link', 22); ?>"></a>
+						<a href="<?php echo get_field('youtube_link', 22); ?>"></a>
 					</li>
 
 				</ul>

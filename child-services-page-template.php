@@ -24,7 +24,7 @@ Template Name: Child of Services
 
 						  	<?php if ( get_field( 'hero_text' ) ) : ?>
 
-								<?php the_field( 'hero_text' ); ?>
+								<?php echo get_field( 'hero_text' ); ?>
 
                				<?php endif; ?>
 
@@ -101,23 +101,23 @@ Template Name: Child of Services
 							<?php // if there is a picture show the picture otherwise the default ?>
 							<?php if ( get_field( 'reviewer_image' ) ) : ?>
 
-								<img class="img-responsive img-circle center-block" src="<?php the_field( 'reviewer_image' ); ?>" alt="<?php the_field( 'reviewer_name' ); ?>" width="144" height="144">
+								<img class="img-responsive img-circle center-block" src="<?php echo get_field( 'reviewer_image' ); ?>" alt="<?php echo get_field( 'reviewer_name' ); ?>" width="144" height="144">
 
 							<?php else : ?>
 
-								<img class="img-responsive img-circle center-block" src="<?php echo get_template_directory_uri(); ?>/images/avatar.png" alt="<?php the_field( 'reviewer_name' ); ?>" width="144" height="144">
+								<img class="img-responsive img-circle center-block" src="<?php echo get_template_directory_uri(); ?>/images/avatar.png" alt="<?php echo get_field( 'reviewer_name' ); ?>" width="144" height="144">
 
 							<?php endif; ?>
 
 							<?php if ( get_field( 'reviewer_name' ) ) : ?>
 
-								<p class="name"><?php the_field( 'reviewer_name' ); ?></p>
+								<p class="name"><?php echo get_field( 'reviewer_name' ); ?></p>
 
 							<?php endif; ?>
 
 							<?php if ( get_field( 'reviewer_position' ) ) : ?>
 
-								<p class="position"><?php the_field( 'reviewer_position' ); ?></p>
+								<p class="position"><?php echo get_field( 'reviewer_position' ); ?></p>
 
 							<?php endif; ?>
 

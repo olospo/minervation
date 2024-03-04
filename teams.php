@@ -47,7 +47,7 @@
 						<?php $image_attributes = wp_get_attachment_image_src( $post_thumbnail_id, "full" );?>							
 							<img class="img-responsive img-circle" src="<?php echo $image_attributes[0]; ?>" alt="<?php echo $alt; ?>">
 							<h2 class="text-center"><?php the_title( ); ?></h2>
-							<h3 class="text-center"><?php the_field( 'position' ); ?></h3>
+							<h3 class="text-center"><?php echo get_field( 'position' ); ?></h3>
 						</a>
 					</div>
 				</div>

@@ -20,7 +20,7 @@
 					
 					<?php if ( get_field( 'about_hero_text' ) ) : ?>
 
-						<?php the_field( 'about_hero_text' ); ?>
+						<?php echo get_field( 'about_hero_text' ); ?>
 
 					<?php endif; ?>
 
@@ -38,7 +38,7 @@
 
 						<?php if ( get_field( 'research_box_text' ) ) : ?>
 
-							<?php the_field( 'research_box_text' ); ?>
+							<?php echo get_field( 'research_box_text' ); ?>
 
 						<?php endif; ?>
 
@@ -54,7 +54,7 @@
 
 						<?php if ( get_field( 'filtering_box_text' ) ) : ?>
 
-							<?php the_field( 'filtering_box_text' ); ?>
+							<?php echo get_field( 'filtering_box_text' ); ?>
 
 						<?php endif; ?>
 
@@ -70,7 +70,7 @@
 
 						<?php if ( get_field( 'summarising_box_text' ) ) : ?>
 
-							<?php the_field( 'summarising_box_text' ); ?>
+							<?php echo get_field( 'summarising_box_text' ); ?>
 
 						<?php endif; ?>
 
@@ -86,7 +86,7 @@
 				
 					<?php if ( get_field( 'about_bottom_hero_text' ) ) : ?>
 
-						<?php the_field( 'about_bottom_hero_text' ); ?>
+						<?php echo get_field( 'about_bottom_hero_text' ); ?>
 
 					<?php endif; ?>
 
@@ -114,7 +114,7 @@
 					
 					<?php if ( get_field( 'history_hero_text' ) ) : ?>
 
-						<?php the_field( 'history_hero_text' ); ?>
+						<?php echo get_field( 'history_hero_text' ); ?>
 
 					<?php endif; ?>
 
@@ -128,9 +128,9 @@
 
 					<div class="col-sm-6">
 						
-						<img class="img-responsive" src="<?php the_sub_field( 'image' ); ?>" alt="<?php the_sub_field( 'image_alt' ); ?>">
+						<img class="img-responsive" src="<?php echo get_sub_field( 'image' ); ?>" alt="<?php echo get_sub_field( 'image_alt' ); ?>">
 
-						<?php the_sub_field( 'text' ); ?>
+						<?php echo get_sub_field( 'text' ); ?>
 
 					</div><!-- .col-sm-6 -->
 
@@ -159,7 +159,7 @@
 					
 					<?php if ( get_field( 'our_ethos' ) ) : ?>
 
-						<?php the_field( 'our_ethos' ); ?>
+						<?php echo get_field( 'our_ethos' ); ?>
 
 					<?php endif; ?>
 
@@ -185,7 +185,7 @@
 
 					<div class="video-container">
 					
-						<?php the_field( 'video_link' ); ?>
+						<?php echo get_field( 'video_link' ); ?>
 
 					</div><!-- .video-container -->
 
@@ -216,7 +216,7 @@
 				
 					<?php if ( get_field( 'team_hero_text' ) ) : ?>
 
-						<?php the_field( 'team_hero_text' ); ?>
+						<?php echo get_field( 'team_hero_text' ); ?>
 
 					<?php endif; ?>
 
@@ -266,7 +266,7 @@
 										<img class="img-responsive img-circle" src="<?php echo $image_attributes[0]; ?>" alt="<?php echo $alt; ?>">
 
 										<h2 class="text-center"><?php the_title( ); ?></h2>
-										<h3 class="text-center"><?php the_field( 'position' ); ?></h3>
+										<h3 class="text-center"><?php echo get_field( 'position' ); ?></h3>
 
 									</a>
 

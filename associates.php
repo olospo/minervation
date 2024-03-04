@@ -66,7 +66,7 @@ Template Name: Associate Members Index
 							<img class="img-responsive img-circle" src="<?php echo $image_attributes[0]; ?>" alt="<?php echo $alt; ?>">
 
 							<p class="text-center name"><?php the_title( ); ?></p>
-							<p class="text-center title"><?php the_field( 'position' ); ?></p>
+							<p class="text-center title"><?php echo get_field( 'position' ); ?></p>
 
 						</a>
 

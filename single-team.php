@@ -13,7 +13,7 @@
 			<div class="row">
 				<div class="col-sm-10 col-sm-offset-1 text-center hero">
 					<?php if ( get_field( 'hero_text' ) ) : ?>
-						<?php the_field( 'hero_text' ); ?>
+						<?php echo get_field( 'hero_text' ); ?>
 					<?php endif; ?>
 				</div><!-- .col-sm-12 -->
 			</div><!-- .row -->
@@ -32,7 +32,7 @@
 						<img class="img-responsive img-circle" src="<?php echo $image_attributes[0]; ?>" alt="<?php echo $alt; ?>">
 
 						<h2 class="text-center"><?php the_title( ); ?></h2>
-						<h3 class="text-center"><?php the_field( 'position' ); ?></h3>
+						<h3 class="text-center"><?php echo get_field( 'position' ); ?></h3>
 
 					</div><!-- .member-box -->
 
@@ -47,11 +47,11 @@
 							<table class="table">
 								<tr>
 									<td>Email: </td>
-									<td><a href="mailto:<?php the_field( 'email' ); ?>"><?php the_field( 'email' ); ?></a></td>
+									<td><a href="mailto:<?php echo get_field( 'email' ); ?>"><?php echo get_field( 'email' ); ?></a></td>
 								</tr>
 								<tr>
 									<td>Office: </td>
-									<td><?php the_field( 'office_tel' ); ?></td>
+									<td><?php echo get_field( 'office_tel' ); ?></td>
 								</tr>
 							</table>
 						</div><!-- .col-sm-12 -->
@@ -67,7 +67,7 @@
 
 									<li>
 										
-										<a href="<?php the_sub_field( 'link' ); ?>" target="_blank" style="background-image: url(<?php the_sub_field( 'icon' ); ?>)"></a>
+										<a href="<?php echo get_sub_field( 'link' ); ?>" target="_blank" style="background-image: url(<?php echo get_sub_field( 'icon' ); ?>)"></a>
 
 									</li>
 
@@ -87,7 +87,7 @@
 							
 							<?php if ( get_field( 'main_text' ) ) : ?>
 
-								<?php the_field( 'main_text' ); ?>
+								<?php echo get_field( 'main_text' ); ?>
 
 							<?php endif; ?>
 

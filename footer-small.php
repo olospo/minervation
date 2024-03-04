@@ -13,11 +13,11 @@
 					<div class="row">
 						<div class="col-sm-6 text-center">
 							<img src="<?php echo get_template_directory_uri(); ?>/images/tel-icon.png" alt="tel">
-							<a href="tel:<?php the_field( 'tel', 22 ); ?>"><?php the_field( 'tel', 22 ); ?></a>
+							<a href="tel:<?php echo get_field( 'tel', 22 ); ?>"><?php echo get_field( 'tel', 22 ); ?></a>
 						</div>
 						<div class="col-sm-6 text-center">
 							<img src="<?php echo get_template_directory_uri(); ?>/images/email-icon.png" alt="mail">
-							<a href="mailto:<?php the_field( 'email', 22 ); ?>"><?php the_field( 'email', 22 ); ?></a>
+							<a href="mailto:<?php echo get_field( 'email', 22 ); ?>"><?php echo get_field( 'email', 22 ); ?></a>
 						</div>
 					</div>
 				</div>
@@ -47,19 +47,19 @@
 				<ul class="social-links list-inline list-unstyled">
 					
 					<li class="twitter">
-						<a href="<?php the_field('twitter_link', 22); ?>"></a>
+						<a href="<?php echo get_field('twitter_link', 22); ?>"></a>
 					</li>
 
 					<li class="facebook">
-						<a href="<?php the_field('facebook_link', 22); ?>"></a>
+						<a href="<?php echo get_field('facebook_link', 22); ?>"></a>
 					</li>
 
 					<li class="linkedin">
-						<a href="<?php the_field('linkedin_link', 22); ?>"></a>
+						<a href="<?php echo get_field('linkedin_link', 22); ?>"></a>
 					</li>
 
 					<li class="youtube">
-						<a href="<?php the_field('youtube_link', 22); ?>"></a>
+						<a href="<?php echo get_field('youtube_link', 22); ?>"></a>
 					</li>
 
 				</ul>
