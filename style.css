@@ -1917,3 +1917,32 @@ footer #search-icon {
 	
 }
 
+// Table styling
+
+table {
+	border: 1px solid #2B2B2B;
+	overflow-x: scroll;
+	font-size: 20px;
+	width: 100%;
+	table-layout: auto;
+	border-collapse: separate !important;
+	margin-bottom: 20px;
+}
+table	p, table ul {
+	font-size: 20px;
+}
+table th {
+	color: #2B2B2B;
+	font-size: 20px;
+	padding: 20px;
+	background: #2CCCC7;
+	text-align: left;
+}
+
+table tr td {
+	padding: 20px;
+}
+
+table tr:nth-child(odd) td {
+	background: #F0F1F5;
+}
