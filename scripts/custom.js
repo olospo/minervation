@@ -11,7 +11,8 @@ jQuery(document).ready(function($){
 
 			'controls': false,
 			'auto' : true,
-			'pause': 5000
+			'pause': 5000,
+			'mode': 'fade' // Change mode to fade
 
 		});
 
